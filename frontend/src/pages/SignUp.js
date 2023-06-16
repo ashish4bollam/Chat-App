@@ -118,7 +118,7 @@ function SignUp() {
     async function uploadImage() {
         const data = new FormData();
         data.append("file", image);
-        data.append("upload_preset", "your-key");
+        data.append("upload_preset",process.env.API_KEY);
         try {
 
             setUploadingImg(true);
