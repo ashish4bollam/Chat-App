@@ -18,7 +18,7 @@ app.use('/users', userRoutes)
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-mongoose.connect("mongodb+srv://<username>:<password>@cluster0.knahwro.mongodb.net/?retryWrites=true&w=majority"  
+mongoose.connect(`${process.env.MONGO_URL}`,{ useNewUrlParser: true, useUnifiedTopology: true }
   
 ).then(() => {
     console.log('Connected to MongoDB');
@@ -26,7 +26,6 @@ mongoose.connect("mongodb+srv://<username>:<password>@cluster0.knahwro.mongodb.n
   .catch((error) => {
     console.error('Error connecting to MongoDB:', error);
   });
-
 
 const server = require('http').createServer(app);
 const PORT = 5001;
