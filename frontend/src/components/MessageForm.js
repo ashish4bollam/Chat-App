@@ -12,6 +12,7 @@ function MessageForm() {
 
     function scrollToBottom() {
         messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
+        
     }
 
 
