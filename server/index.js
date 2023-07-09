@@ -31,7 +31,7 @@ const server = require('http').createServer(app);
 const PORT = process.env.PORT || 5001;
 const io = require('socket.io')(server, {
   cors: {
-    origin: 'http://localhost:3000',
+    origin: 'https://chat-app-main-eight.vercel.app',
     methods: ['GET', 'POST']
   }
 });
