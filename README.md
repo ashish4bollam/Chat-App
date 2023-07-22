@@ -2,8 +2,8 @@
 Full-stack chatting website made using the MERN stack.
 
 ## Major Features
-- Login and Sign Up
-- Users can chat in the room or with one another
+- Login/Sign Up using JWT
+- Users can chat in rooms or personal.
 - Users can set their profile pic.
 - Users can delete messages.
 - Timestamp of messages.
